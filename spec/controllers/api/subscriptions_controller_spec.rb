@@ -20,8 +20,8 @@ RSpec.describe Api::SubscriptionsController, :type => :controller do
       )
     end
 
-    #specify 'that a Subscription object is created in the database' do
-
-    #end
+    specify 'that a Subscription object is created in the database' do
+      expect { subject }.to change(Subscription, :count).by(1)
+    end
   end
 end
