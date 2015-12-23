@@ -9,7 +9,6 @@ class Api::SubscriptionsController < ApplicationController
 
   private
     def data
-      return { id: "f019e02a-c6f2-4b27-9f2d-e9a342941f83" } unless params[:data]
       params[:data]
     end
 end
